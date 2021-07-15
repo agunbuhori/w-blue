@@ -11,7 +11,7 @@ function CoupleSection() {
           <div style={{borderRadius: '40px'}} className="w-52 h-52 overflow-hidden mt-20">
             <img src="/images/ilham.png" className="w-full"/>
           </div>
-          <h2 className="text-gold text-3xl mt-4 font-bold primary-font">{data.man_name}</h2>
+          <h2 className="text-gold text-2xl mt-4 font-bold primary-font">{data.man_name}</h2>
           <h2 className="text-white text-md">{data.man_parent}</h2>
   
           <h1 className="primary-font my-5 text-gold" style={{fontSize: '60pt'}}>&</h1>
@@ -20,7 +20,7 @@ function CoupleSection() {
             <img src="/images/ayu.png" className="w-full"/>
           </div>
   
-          <h2 className="text-gold text-3xl mt-4 font-bold primary-font">{data.woman_name}</h2>
+          <h2 className="text-gold text-2xl mt-4 font-bold primary-font">{data.woman_name}</h2>
           <h2 className="text-white text-md">{data.woman_parent}</h2>
       </section>
     );

@@ -47,8 +47,8 @@ function SaveTheDateSection() {
     return (
         <div className="px-4 py-8 text-center">
             <h1 className="primary-font text-4xl">Save The Date</h1>
-            <h1 className="text-2xl">{moment(data.wedding_date).format('dddd, MMMM DD, YYYY')}</h1>
-            <h1 className="text-2xl">{moment(data.wedding_date).format('HH:mm')}</h1>
+            <h1 className="text-2xl">{moment(data.wedding_date).format('dddd, MMMM DD, YYYY').toUpperCase()}</h1>
+            <h1 className="text-2xl">{moment(data.wedding_date).format('HH:mm').toUpperCase()}</h1>
             <img src="/images/divider.png" className="w-full mt-5"/>
 
             <div className="flex w-full justify-around">
