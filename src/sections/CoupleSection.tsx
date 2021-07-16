@@ -3,7 +3,7 @@ import data from "../data";
 function CoupleSection() {
     return (
       <section className="hello px-4 py-16 flex items-center justify-center bg-no-repeat flex-col bg-cover text-center bg-fixed" style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL}/images/background.png)`
+          backgroundImage: `url(${process.env.PUBLIC_URL}/images/bg-couple.webp)`
         }}>
           <h1 className="text-2xl text-white font-bold">The Wedding Of</h1>
           <span className="text-white text-lg italic">The pleasure of your company is requested</span>

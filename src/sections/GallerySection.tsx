@@ -1,7 +1,7 @@
 function GallerySection() {
     return (
         <section className="hello px-4 py-16 flex items-center justify-center bg-no-repeat flex-col bg-cover text-center" style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL}/images/texture.jpeg)`
+            backgroundImage: `url(${process.env.PUBLIC_URL}/images/texture.jpg)`
           }}>
 
             <h1 className="text-2xl font-bold">Pict Of Us</h1>
