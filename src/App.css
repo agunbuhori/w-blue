@@ -6,7 +6,7 @@ body {
 }
 
 .primary-font {
-  font-family: 'Alex Brush', cursive;
+  /*font-family: 'Alex Brush', cursive;*/
 }
 .text-gold {
   color: #ffd0a8;
@@ -29,6 +29,6 @@ body {
   z-index: 99999;
 }
 
-* {
-  overflow-x: hidden !important;
+section, div {
+  overflow: hidden !important;
 }
