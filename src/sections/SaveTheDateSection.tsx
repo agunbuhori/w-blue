@@ -46,26 +46,26 @@ function SaveTheDateSection() {
 
     return (
         <div className="px-4 py-8 text-center">
-            <h1 className="primary-font text-4xl">Save The Date</h1>
-            <h1 className="text-2xl">{moment(data.wedding_date).format('dddd, MMMM DD, YYYY').toUpperCase()}</h1>
-            <h1 className="text-2xl">{moment(data.wedding_date).format('HH:mm').toUpperCase()} WITA</h1>
+            <h1 data-aos="fade-up" className="primary-font text-4xl">Save The Date</h1>
+            <h1 data-aos="fade-up" className="text-2xl">{moment(data.wedding_date).format('dddd, MMMM DD, YYYY').toUpperCase()}</h1>
+            <h1 data-aos="fade-up" className="text-2xl">{moment(data.wedding_date).format('HH:mm').toUpperCase()} WITA</h1>
             <img src="/images/divider.png" className="w-full mt-5"/>
 
             <div className="flex w-full justify-around">
-                <div className="flex flex-col items-center justify-center">
+                <div data-aos="fade-right" className="flex flex-col items-center justify-center">
                     <span className="text-4xl font-bold">{days}</span>
                     <span className="text-sm">Days</span>
                 </div>
                 
-                <div className="flex flex-col items-center justify-center">
+                <div data-aos="fade-down" className="flex flex-col items-center justify-center">
                     <span className="text-4xl font-bold">{hours}</span>
                     <span className="text-sm">Hours</span>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div data-aos="fade-up" className="flex flex-col items-center justify-center">
                     <span className="text-4xl font-bold">{minutes}</span>
                     <span className="text-sm">Minutes</span>
                 </div>
-                <div className="flex flex-col items-center justify-center">
+                <div data-aos="fade-left" className="flex flex-col items-center justify-center">
                     <span className="text-4xl font-bold">{seconds}</span>
                     <span className="text-sm">Seconds</span>
                 </div>

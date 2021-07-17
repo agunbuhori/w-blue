@@ -11,3 +11,24 @@ body {
 .text-gold {
   color: #ffd0a8;
 }
+
+#satu {
+  animation: zooming 2s;
+
+}
+
+@keyframes zooming {
+  0% {
+    width: 100%;
+  }
+  100% {
+    width: 200%;
+  }
+}
+.zzz {
+  z-index: 99999;
+}
+
+* {
+  overflow-x: hidden !important;
+}
