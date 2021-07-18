@@ -12,7 +12,7 @@ import GallerySection from './sections/GallerySection';
 import ScheduleSection from './sections/ScheduleSection';
 import WishSection from './sections/WishSection';
 import ProtocolSection from './sections/ProtocolSection';
-
+import CarouselSection from './sections/CarouselSection';
 import AOS from 'aos';
 import 'aos/dist/aos.css'; // You can also use <link> for styles
 // ..
@@ -35,19 +35,18 @@ function App() {
      // an empty array if you just want to run it once after component mounted. 
      [music, msc]);
 
-     useLayoutEffect(() => {
-        if (music) { 
-          msc.play();
-        } else {
-          msc.pause();
-        }
-
-        
-      }, [msc, music, open])
-
+  useLayoutEffect(() => {
+    if (music) { 
+      msc.play();
+    } else {
+      msc.pause();
+    }   
     
+  }, [msc, music, open])
+
   return (
     <div className="container relative">
+      <CarouselSection/>
       <SlideSection/>
       <AyahSection/>
       <CoupleSection/>
@@ -71,10 +70,23 @@ function App() {
               <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M17 14l2-2m0 0l2-2m-2 2l-2-2m2 2l2 2" />
             </svg>
         }
-
+ 
       </button>
+      {
+        open ?
+        null
+        :
+        <div className="cover fixed top-0 left-0 w-full h-full zzz flex items-center justify-center flex-col px-4" style={{
+          backgroundImage: 'url("/images/gallery/casual.jpg")',
+          backgroundPosition: 'center',
+          backgroundSize: 'cover'
+        }}>
+          <h1 className="text-center text-white hw" style={{fontSize: '40pt', lineHeight: '48px'}}>And The Journey Starts Begin</h1>
+          
+          <button onClick={() => {setOpen(true); setMusic(true)}} className="rounded-xl px-4 py-3 border-2 border-white text-white font-bold mt-10">START</button>
+        </div>
+      }
       
-      <div className="fixed top-0 left-0 w-full h-full bg-red-200 zzz"></div>
     </div>
   );
 }

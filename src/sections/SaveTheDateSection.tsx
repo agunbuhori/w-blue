@@ -56,9 +56,6 @@ const date = new Date("2021-07-23T07:30:51.01");
     renderer={renderer}
   />
 
-            <div className="mt-10">
-                <button className="border-2 border-black rounded bg-transparent py-2 px-4 font-semibold">Add To Calendar</button>
-            </div>
         </div>
     )
 }

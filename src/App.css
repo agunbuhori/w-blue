@@ -8,6 +8,10 @@ body {
 .primary-font {
   /*font-family: 'Alex Brush', cursive;*/
 }
+.hw {
+  
+  font-family: 'Alex Brush', cursive;
+}
 .text-gold {
   color: #ffd0a8;
 }
